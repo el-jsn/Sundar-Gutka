@@ -1,0 +1,79 @@
+/* global.css */
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, black, black,#fb7100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: auto;
+    height: 7rem;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header button {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.2rem solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header button:hover {
+    background-color: white;
+    color: #00416A;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list ul li {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.list ul li a {
+    color: #fb7100;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+}
+
+.list ul li a:hover {
+    color: #0400fb;
+}

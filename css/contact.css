@@ -1,25 +1,44 @@
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-info p {
     margin-bottom: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #0056b3;
+a:hover {
+    text-decoration: underline;
 }

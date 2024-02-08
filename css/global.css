@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: url('../img/background.jpg');
     background-size: cover;
-    background-position: 0 7rem;}
+    background-position: 0 5rem;}
 
 header {
     background: linear-gradient(90deg, black, black,#fb7100);
@@ -15,19 +15,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    height: 7rem;
+    height: 5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header img {
     width: auto;
-    height: 7rem;
+    height: 5rem;
 }
 
 header h1 a {
     color: white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 

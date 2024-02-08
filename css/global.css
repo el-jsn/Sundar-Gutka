@@ -1,13 +1,13 @@
 /* global.css */
 
 body {
-    height: 100%;
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: url('../img/background.jpg');
+    background-image: linear-gradient(120deg, #fbe3c5 0%, #fed8a0 100%);
     background-size: cover;
-    background-position: 0 5rem;}
+    background-position: 0 5rem;
+}
 
 header {
     background: linear-gradient(90deg, black, black,#fb7100);
@@ -27,7 +27,7 @@ header img {
 header h1 a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -42,58 +42,89 @@ header button {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header button a{
+header button a {
     text-decoration: none;
     color: white;
 }
 
-header button:hover{
+header button:hover {
     background-color: white;
-
 }
 
-header button:hover > a{
+header button:hover > a {
     text-decoration: none;
     color: #00416A;
 }
 
-main{
+main {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: top;
-    background-color: rgba(0, 0, 0, 0.364);
 }
 
 .list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
 }
 
-.list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.list ul li {
-    background-color: #F4F4F4;
-    border-radius: 10px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease;
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
+    
 }
 
-.list ul li a {
+.tile img {
+    width: auto;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.tile p {
+    margin-top: 0.5rem;
+}
+
+.tile p a {
     color: #fb7100;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.list ul li a:hover {
+.tile p a:hover {
     color: #0400fb;
+}
+
+.list p a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tile img {
+        width: auto;
+        height: 10rem;
+        border-radius: 10px;
+    }
+
+    .kirtan-tile{
+        grid-column: span 2;
+    }
 }

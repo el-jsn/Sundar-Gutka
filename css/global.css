@@ -5,7 +5,9 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-}
+    background-image: url('../img/background.jpeg');
+    background-size: cover;
+    background-position: center;}
 
 header {
     background: linear-gradient(90deg, black, black,#fb7100);
@@ -53,6 +55,14 @@ header button:hover{
 header button:hover > a{
     text-decoration: none;
     color: #00416A;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-color: rgba(0, 0, 0, 0.69);
 }
 
 .list {

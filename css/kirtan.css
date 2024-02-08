@@ -70,7 +70,7 @@ header h1 a {
 .img-container img {
   border-radius: 50%;
   object-fit: cover;
-  height: 6.5rem;
+  height: 110px;
   width: inherit;
   position: absolute;
   bottom: 0;
@@ -199,11 +199,33 @@ header h1 a {
 
 
 @media only screen and (max-width: 600px) {
+  .music-container {
+    top: 10px;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    margin-bottom: 30px;
+  }
+
+  .img-container {
+    position: relative;
+    right: 2rem;
+    width: 90px;
+  }
+
+  .img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 90px;
+    width: inherit;
+  }
+
+  .img-container::after {
+    display: none;
+  }
 
     h1{
         font-size: 1rem;
     }
-
   }
 
 

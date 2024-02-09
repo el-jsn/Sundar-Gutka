@@ -1,4 +1,4 @@
-const id = 'AIzaSyDZScTnbmg-ECzI3HztUFGSOGur8Di_xmU';
+const id = 'AIzaSyDsnIE1ughZmXbAhWdxEZTjpEz25V3lwgY';
 const channelId = 'UCYn6UEtQ771a_OWSiNBoG8w'; 
 
 fetch(`https://www.googleapis.com/youtube/v3/search?key=${id}&channelId=${channelId}&part=snippet&type=video&eventType=live`)

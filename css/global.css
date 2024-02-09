@@ -1,10 +1,11 @@
-/* global.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gurmukhi&display=swap');
+
 
 body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(120deg, #fbe3c5 0%, #fed8a0 100%);
+    background-image: linear-gradient(90deg, #d0d0d0ac 0%, #fb7100 100%);
     background-size: cover;
     background-position: 0 5rem;
 }
@@ -27,19 +28,9 @@ header img {
 header h1 a {
     color: white;
     text-decoration: none;
+    font-family: 'Noto Serif Gurmukhi', serif;
     font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header button {
-    background-color: transparent;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border: 0.2rem solid white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 header button a {
@@ -47,10 +38,17 @@ header button a {
     color: white;
 }
 
-header button:hover {
-    background-color: white;
-}
-
+header button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  header button:hover {
+    color: #00416A; /* Lighter blue */
+  }
 header button:hover > a {
     text-decoration: none;
     color: #00416A;
@@ -61,7 +59,21 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: top;
+    padding: 3rem;
 }
+
+h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
 
 .list {
     display: grid;
@@ -75,12 +87,13 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    
 }
 
 .tile img {
     width: auto;
     height: 15rem;
+    border-radius: 10px;
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.651);
     border-radius: 10px;
 }
 
@@ -93,10 +106,11 @@ main {
     text-decoration: none;
     transition: color 0.3s;
     font-size: 1.2rem;
+    font-family: 'Noto Serif Gurmukhi', serif;
 }
 
 .tile p a:hover {
-    color: #0400fb;
+    color: #cbcafd;
 }
 
 .list p a{
@@ -128,3 +142,4 @@ main {
         grid-column: span 2;
     }
 }
+  

@@ -17,8 +17,8 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${ch
             `;
         } else {
             // If no live streams are found, retrieve the latest video from the channel
-            fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&type=video&order=date`)
-                .then(response => {
+            fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&type=video&order=date&eventType=completed`)
+            .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }

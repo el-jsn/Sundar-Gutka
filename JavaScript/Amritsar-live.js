@@ -1,7 +1,7 @@
-const apiKey = 'AIzaSyDZScTnbmg-ECzI3HztUFGSOGur8Di_xmU';
+const id = 'AIzaSyDZScTnbmg-ECzI3HztUFGSOGur8Di_xmU';
 const channelId = 'UCYn6UEtQ771a_OWSiNBoG8w'; 
 
-fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&type=video&eventType=live`)
+fetch(`https://www.googleapis.com/youtube/v3/search?key=${id}&channelId=${channelId}&part=snippet&type=video&eventType=live`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -17,7 +17,7 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${ch
             `;
         } else {
             // If no live streams are found, retrieve the latest video from the channel
-            fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&type=video&order=date&eventType=completed`)
+            fetch(`https://www.googleapis.com/youtube/v3/search?key=${id}&channelId=${channelId}&part=snippet&type=video&order=date&eventType=completed`)
             .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');

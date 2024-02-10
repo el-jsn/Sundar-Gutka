@@ -6,9 +6,9 @@
 
 body {
   background-image: linear-gradient(
-    0deg,
-    rgb(218, 231, 255) 23.8%,
-    rgb(253, 226, 189) 92%
+    30deg,
+    rgb(154, 189, 254) 23.8%,
+    rgb(255, 212, 152) 92%
   );
   height: 100%;
   display: flex;
@@ -21,7 +21,7 @@ body {
 /* Header */
 
 header {
-    background: linear-gradient(90deg, black, black,#fb7100);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +36,36 @@ header h1 a {
     text-decoration: none;
     font-size: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header img{
+    height: 3rem;
+    width: auto;
+    position: absolute;
+    left: 1rem;
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: white;
+  transition: color 0.3s;
+  position: absolute;
+  right: 1rem;
+}
+
+header button a{
+  text-decoration: none;
+  color: white;
+}
+
+header button:hover {
+  color: orange; /* Lighter blue */
+}
+header button:hover > a {
+  text-decoration: none;
+  color: orange;
 }
 
 /* Kirtan File */

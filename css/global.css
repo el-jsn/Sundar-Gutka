@@ -5,13 +5,18 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(90deg, #d0d0d0ac 0%, #fb7100 100%);
-    background-size: cover;
+    background: linear-gradient(130deg, rgba(0, 34, 255, 0.83),  #fb7100);
+    /* background: radial-gradient(circle, rgba(43, 75, 255, 0.83) 0%, rgb(251, 113, 0) 100%); */
     background-position: 0 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: top left;
+    background-size: 100%;
 }
 
 header {
-    background: linear-gradient(90deg, black, black,#fb7100);
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;

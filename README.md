@@ -17,35 +17,8 @@ The Dragon Ball Z Fighter Database is a web application designed to catalog char
 - **Mongoose:** ODM (Object Data Modeling) library for MongoDB and Node.js.
 - **Handlebars:** Templating engine used to render HTML templates.
 - **Bootstrap:** For styling and responsive design.
+## Extra feature
 - **Fuse.js:** For implementing search functionality.
-
-## Project Structure
-```
-project/
-│
-├── models/
-│   └── fighter.js          # Mongoose schema and model for fighters
-├── routes/
-│   ├── index.js            # Home page and general routes
-│   ├── fighters.js         # Fighter-specific routes
-│   └── users.js            # Authentication and user-related routes
-├── views/
-│   ├── layouts/
-│   │   └── main.hbs
-│   ├── partials/
-│   │   ├── header.hbs
-│   │   └── footer.hbs
-│   └── fighters/
-│       ├── index.hbs
-│       └── details.hbs
-├── public/
-│   ├── images/
-│   ├── stylesheets/
-│   │   └── style.css
-│   └── javascripts/
-│       └── search.js       # Fuse.js implementation
-└── app.js                  # Main application file
-```
 
 ## Setup and Installation
 1. **Clone the Repository:**
